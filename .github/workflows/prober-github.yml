@@ -10,6 +10,9 @@ jobs:
   prober:
     if: github.repository_owner == 'actions'
     permissions:
+  id-token: write
+  attestations: write
+  artifact-metadata: write
       attestations: write
       id-token: write
     secrets: inherit
